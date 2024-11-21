@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sidebar">
+        <img src="./image.png" alt="Profile Photo" class="profile-photo" />
+        <h1 class="name">박 한 비</h1>
+        <p class="title">Cloud Engineer</p>
+        <p class="contact">your.email@example.com</p>
+        <p class="contact">010 9999 8888</p>
+      </nav>
+      <header class="header">
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+        </ul>
+      </header>
+      <main>
+        <section id="projects" class="projects">
+          <h2>Projects</h2>
+          <div class="project-card">
+            <div class="project-image-wrapper">
+              <img
+                src="./sample_project.png"
+                alt="Project 1"
+                class="project-image"
+              />
+            </div>
+            <div class="project-details">
+              <h3>Project Title 1</h3>
+              <p>
+                This project demonstrates the implementation of a scalable AWS
+                infrastructure. It includes features such as auto-scaling groups
+                and load balancing. Focused on secure deployments using
+                Terraform as IaC.
+              </p>
+              <div class="tags">
+                <span>#AWS</span>
+                <span>#Terraform</span>
+                <span>#Infrastructure</span>
+                <span>#Scalability</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image-wrapper">
+              <img
+                src="./sample_project.png"
+                alt="Project 2"
+                class="project-image"
+              />
+            </div>
+            <div class="project-details">
+              <h3>Project Title 2</h3>
+              <p>
+                Developed a serverless architecture using AWS Lambda and
+                DynamoDB. Managed CI/CD pipelines with Terraform to automate
+                deployments efficiently. Enhanced cost optimization and
+                monitoring for cloud services.
+              </p>
+              <div class="tags">
+                <span>#AWS</span>
+                <span>#Lambda</span>
+                <span>#DynamoDB</span>
+                <span>#Terraform</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="certifications" class="certifications">
+          <h2>Certifications</h2>
+          <div class="certification-card">
+            <img
+              src="./nca.png"
+              alt="Certification"
+              class="certification-image"
+            />
+            <div class="certification-details">
+              <h3>Certification Title</h3>
+              <p>This is a brief description of the certification.</p>
+              <p><strong>Issued by:</strong> Organization Name</p>
+              <p><strong>Date:</strong> YYYY-MM-DD</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

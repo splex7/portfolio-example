@@ -1,0 +1,363 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background: #4a4e69;
+    color: #fff;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.title {
+    font-size: 1.2rem;
+    color: #c9ada7;
+}
+
+.contact {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    right: 0;
+    background: #22223b;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Main Section Styles */
+main {
+    margin-left: 250px;
+    margin-top: 60px;
+    padding: 20px;
+    width: 100%;
+}
+
+.projects {
+    margin: 20px 0;
+}
+
+.project-card {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    width: 60%;
+    height: auto;
+}
+
+.project-details {
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.tags span {
+    background: #c9ada7;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .header {
+        left: 200px;
+    }
+
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
+    .project-details {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        display: none;
+    }
+
+    .header {
+        left: 0;
+    }
+
+    main {
+        margin-left: 0;
+    }
+}
+.certifications {
+    margin: 20px 0;
+}
+
+.certification-card {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certification-image {
+    width: 60%;
+    height: auto;
+}
+
+.certification-details {
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.certification-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.certification-details p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsive Styles for Certifications */
+@media (max-width: 768px) {
+    .certification-card {
+        flex-direction: column;
+    }
+
+    .certification-image {
+        width: 100%;
+    }
+
+    .certification-details {
+        width: 100%;
+    }
+}
+.project-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-image-wrapper {
+    width: 35%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-details {
+    width: 65%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tags span {
+    background: #6c757d;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+/* Responsive Styles for Projects */
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-image-wrapper {
+        width: 100%;
+    }
+
+    .project-details {
+        width: 100%;
+    }
+}
+.project-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-image-wrapper {
+    width: 35%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-details {
+    width: 65%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tags span {
+    background: #6c757d;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+/* Responsive Styles for Projects */
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-image-wrapper {
+        width: 100%;
+    }
+
+    .project-details {
+        width: 100%;
+    }
+}
